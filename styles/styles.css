@@ -1,0 +1,212 @@
+
+html {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    background-color: #CFDEFB;
+}
+
+body {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #FF9500;
+    padding: 0 20px 20px 20px;
+    border: 3px solid black;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;    
+    color: #055AF9;
+    text-shadow: 3px 3px 1px black;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    margin: 5px auto;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    //display: block;
+    font-size: 26px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-item + .flex-item {
+    margin-left: 10px;
+}
+
+p, li {
+    font-size: 16px;    
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+.idxImg {
+    display: block;
+    width: 100%;//250px;
+    heigth: auto;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 20vh);
+    //grid-gap: 1vw;
+    column-gap: 10px;
+    row-gap: 1em;
+}
+
+.gridWrapper {
+    border: none;
+    margin: none;
+    padding: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 0px;
+    //width: 100px;
+}
+
+.box {
+    background-color: white;
+    background-image: url(../images/cards-sprite.png);
+    background-size: 600vw;
+    background-repeat: no-repeat;
+    height: 31.8vw;
+    width: 21vw;
+
+    text-align: center;
+    //vertical-align: middle;
+    margin: 5px 3px;
+    padding: 0 0;
+}
+
+#card01 {
+    background-position: 0 0;
+}
+#card02 {
+    background-position: -21.5vw 0;
+}
+#card03 {
+    background-position: -43vw 0;
+}
+#card04 {
+    background-position: -64.5vw 0;
+}
+#card05 {
+    background-position: 0 -32.0vw;
+}
+#card06 {
+    background-position: -21.5vw -32.0vw;
+}
+#card07 {
+    background-position: -43vw -32.0vw;
+}
+#card08 {
+    background-position: -64.5vw -32.0vw;
+}
+#card09 {
+    background-position: -86vw 0;
+}
+#card10 {
+    background-position: -107.5vw 0;
+}
+#card11 {
+    background-position: -129vw 0;
+}
+#card12 {
+    background-position: -150.5vw 0;
+}
+#card13 {
+    background-position: -86vw -32.0vw;
+}
+#card14 {
+    background-position: -107.5vw -32.0vw;
+}
+#card15 {
+    background-position: -129vw -32.0vw;
+}
+#card16 {
+    background-position: -150.5vw -32.0vw;
+}
+
+.animation {
+    display: inline-block;
+    display: none;
+    width: 100px;
+    height: 100px;
+    //background-color: blue;
+    background-image: url("../images/bean.png");
+
+    background-size: 100px;
+    background-repeat: no-repeat;
+    border-radius:55px;
+    box-shadow:  0 0 10px  rgba(0,0,0,0.6);
+    -moz-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+    -o-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+    
+    margin: 30% auto;
+}
+
+.wrapperTop {
+    text-align: center;
+    margin: 10px auto;
+    padding: 20px 0;    
+    border: 3px solid black;
+    background-color: #FF9500;
+    //background-image: url(../images/cards-sprite.png);
+
+    heigth: auto;
+    width: auto;
+}
+.newCardBox {
+    height: 375px;
+    width: 251px;
+    display: inline-block;
+    background-color: #FFFFFF;
+
+    background-image: url(../images/cards-sprite.png);
+    background-position: -1264px 0;
+}
+
+.wrapperBottom {
+    text-align: left;
+    margin: 3px auto;
+    padding: 10px 0;    
+    border: 3px solid black;
+    background-color: #FF9500;
+    //background-image: url(../images/cards-sprite.png);
+
+    heigth: auto;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;//repeat(15, 10vh);
+    //grid-gap: 1vw;
+}
+.allCardsBox {
+    height: 211px;
+    width: 142.885px;
+    margin: 10px 2px;
+    display: inline-block;
+    background-color: #FFFFFF;
+
+    background-image: url(../images/cards-sprite.png);
+    background-repeat: no-repeat;
+    background-size: 4000px;//1920px;
+    //background-position: -3715px 0;
+}
+

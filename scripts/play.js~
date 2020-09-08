@@ -1,0 +1,20 @@
+let myButtonReshufle = document.querySelector('#buttonReshufle');
+let myButtonBack = document.querySelector('#buttonBack');
+
+myButtonReshufle.onclick = function() {
+  reshufleCards();
+}
+
+myButtonBack.onclick = function() {
+  goToMain();
+}
+
+function reshufleCards() {
+    //This function must display 16 random cards in a 4x4 grid in the screen:
+    
+}
+
+function goToMain() {
+    window.location = "./index.html";
+}
+

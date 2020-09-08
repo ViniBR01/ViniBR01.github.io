@@ -1,0 +1,56 @@
+let myButtonGetNew = document.querySelector('#buttonGetNew');
+let myButtonBack = document.querySelector('#buttonBack');
+
+myButtonGetNew.onclick = function() {
+  getNewCard();
+}
+
+myButtonBack.onclick = function() {
+  goToMain();
+}
+let allCards = []
+allCards = getRandomCards();
+let i = 0;
+function getNewCard() {
+    //window.open('./play.html', '_blank'); //open in new window
+    //window.location = "./play.html";
+    //window.alert("Test Alert.");
+    if (i < 53) {
+	window.alert("Next card: " + allCards[i]);
+	i++;
+    } else {
+	window.alert("No more cards to draw.");
+    }
+}
+
+function getRandomCards() {
+    let allCards = [];
+    var i;
+    for (i=0; i<55; i++) {
+	if (i !== 10 && i !== 22) {
+	    allCards.push(i);
+	}
+    }
+    let cards = random53(allCards);
+    return cards;
+}
+function random53(array) {
+    var tmp, current, top = array.length;
+    if(top) while(--top) {
+	current = Math.floor(Math.random() * (top + 1));
+	tmp = array[current];
+	array[current] = array[top];
+	array[top] = tmp;
+    }
+    return array;
+}
+
+
+
+
+
+function goToMain() {
+    //window.open('./cast.html', '_blank'); //open in new window
+    window.location = "./index.html";
+}
+
